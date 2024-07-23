@@ -35,10 +35,10 @@
             function display() {
                 let html = '';
                 for(let i=0; i<todolist_Array.length; i++)
-                    html += <p> ${todolist_Array[i].task} ${todolist_Array[i].date} <button onclick="deleteList(${i})" style="background-color: red; color: white; font-weight: bold; border-radius: 5px; padding-left: 14px; padding-right: 14px; padding-top: 8px; padding-bottom: 8px;">Delete</button> </p>;
+                    html += `<p> ${todolist_Array[i].task} ${todolist_Array[i].date} <button onclick="deleteList(${i})" style="background-color: red; color: white; font-weight: bold; border-radius: 5px; padding-left: 14px; padding-right: 14px; padding-top: 8px; padding-bottom: 8px;">Delete</button> </p>`;
                 document.querySelector('.display-todolist').innerHTML = html;
             }
 
         </script>
-    </body>
+    </body>
 </html>
